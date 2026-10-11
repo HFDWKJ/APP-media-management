@@ -15,7 +15,7 @@ from version import __version__
 
 log = logging.getLogger(__name__)
 
-DEFAULT_GITHUB_REPO = "HFDWKJ/MediaManager"
+DEFAULT_GITHUB_REPO = "HFDWKJ/APP-media-management"
 USER_AGENT = f"MediaManager/{__version__}"
 
 INSTALLER_PATTERN = re.compile(

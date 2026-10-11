@@ -17,7 +17,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
     },
     "update": {
         "check_on_startup": True,
-        "github_repo": "HFDWKJ/MediaManager",
+        "github_repo": "HFDWKJ/APP-media-management",
         "github_token": "",
         "dismissed_version": "",
     },

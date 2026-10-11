@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/HFDWKJ/MediaManager/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/MediaManager?label=release&logo=github" alt="Release"/></a>
-  <a href="https://github.com/HFDWKJ/MediaManager"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/APP-media-management?label=release&logo=github" alt="Release"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white" alt="Python"/></a>
   <a href="https://www.riverbankcomputing.com/software/pyqt/"><img src="https://img.shields.io/badge/GUI-PyQt6-41CD52?logo=qt" alt="PyQt6"/></a>
 </p>
@@ -50,14 +50,14 @@
 | **整理** | 展開フォルダを `[Collections]` にフラット化。テンプレート、進捗バー、パーセント、ETA 対応 |
 | **Face UID** | ニックネーム、地域、コメント付きの短い一意 ID |
 | **ポータブル版** | exe 横の `data\` に設定、DB、ログを保存 |
-| **自動更新** | 起動時に [GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases) を確認 |
+| **自動更新** | 起動時に [GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases) を確認 |
 | **UI** | DiskGenius 風ダークテーマと Office スタイルのリボン |
 
 ---
 
 ## ダウンロード
 
-ビルド済みバイナリは **[GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases)** で公開：
+ビルド済みバイナリは **[GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases)** で公開：
 
 | 版 | ファイル |
 |----|----------|
@@ -79,7 +79,7 @@
 ### セットアップと実行
 
 ```powershell
-git clone https://github.com/HFDWKJ/MediaManager.git
+git clone https://github.com/HFDWKJ/APP-media-management.git MediaManager
 cd MediaManager
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -215,7 +215,7 @@ CHANGELOG.md           リリースノート（About ダイアログ）
 | [README.es.md](README.es.md) | Español |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | バージョン計画と v0.0.4 チェックリスト |
 | [CHANGELOG.md](CHANGELOG.md) | リリース履歴 |
-| [GitHub Milestones](https://github.com/HFDWKJ/MediaManager/milestones) | Issue 追跡 |
+| [GitHub Milestones](https://github.com/HFDWKJ/APP-media-management/milestones) | Issue 追跡 |
 
 ---
 

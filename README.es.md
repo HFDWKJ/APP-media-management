@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/HFDWKJ/MediaManager/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/MediaManager?label=release&logo=github" alt="Release"/></a>
-  <a href="https://github.com/HFDWKJ/MediaManager"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/APP-media-management?label=release&logo=github" alt="Release"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white" alt="Python"/></a>
   <a href="https://www.riverbankcomputing.com/software/pyqt/"><img src="https://img.shields.io/badge/GUI-PyQt6-41CD52?logo=qt" alt="PyQt6"/></a>
 </p>
@@ -50,14 +50,14 @@
 | **Reorganizar** | Aplanar carpetas extraídas en `[Collections]` con plantillas, barra de progreso, porcentaje y ETA |
 | **Face UID** | IDs únicos cortos con apodo, región y comentarios |
 | **Edición portable** | Carpeta `data\` junto al exe para config, base de datos y registros |
-| **Auto-actualización** | Comprueba [GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases) al iniciar |
+| **Auto-actualización** | Comprueba [GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases) al iniciar |
 | **Interfaz** | Tema oscuro inspirado en DiskGenius y cinta estilo Office |
 
 ---
 
 ## Descarga
 
-Binarios precompilados en **[GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases)**:
+Binarios precompilados en **[GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases)**:
 
 | Edición | Archivo |
 |---------|---------|
@@ -79,7 +79,7 @@ Binarios precompilados en **[GitHub Releases](https://github.com/HFDWKJ/MediaMan
 ### Instalación y ejecución
 
 ```powershell
-git clone https://github.com/HFDWKJ/MediaManager.git
+git clone https://github.com/HFDWKJ/APP-media-management.git MediaManager
 cd MediaManager
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -215,7 +215,7 @@ CHANGELOG.md           Notas de release (diálogo About)
 | [README.ko.md](README.ko.md) | 한국어 |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | Planes de versión y checklist v0.0.4 |
 | [CHANGELOG.md](CHANGELOG.md) | Historial de releases |
-| [GitHub Milestones](https://github.com/HFDWKJ/MediaManager/milestones) | Seguimiento de issues |
+| [GitHub Milestones](https://github.com/HFDWKJ/APP-media-management/milestones) | Seguimiento de issues |
 
 ---
 

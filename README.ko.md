@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/HFDWKJ/MediaManager/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/MediaManager?label=release&logo=github" alt="Release"/></a>
-  <a href="https://github.com/HFDWKJ/MediaManager"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/APP-media-management?label=release&logo=github" alt="Release"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white" alt="Python"/></a>
   <a href="https://www.riverbankcomputing.com/software/pyqt/"><img src="https://img.shields.io/badge/GUI-PyQt6-41CD52?logo=qt" alt="PyQt6"/></a>
 </p>
@@ -50,14 +50,14 @@
 | **재구성** | 압축 해제 폴더를 `[Collections]`로 평탄화; 템플릿, 진행률 표시줄, 백분율, ETA |
 | **Face UID** | 닉네임, 지역, 코멘트가 있는 짧은 고유 ID |
 | **포터블 에디션** | exe 옆 `data\`에 설정, DB, 로그 저장 |
-| **자동 업데이트** | 시작 시 [GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases) 확인 |
+| **자동 업데이트** | 시작 시 [GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases) 확인 |
 | **UI** | DiskGenius 스타일 다크 테마 및 Office 스타일 리본 |
 
 ---
 
 ## 다운로드
 
-빌드된 바이너리는 **[GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases)** 에서 제공:
+빌드된 바이너리는 **[GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases)** 에서 제공:
 
 | 에디션 | 파일 |
 |--------|------|
@@ -79,7 +79,7 @@
 ### 설치 및 실행
 
 ```powershell
-git clone https://github.com/HFDWKJ/MediaManager.git
+git clone https://github.com/HFDWKJ/APP-media-management.git MediaManager
 cd MediaManager
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -215,7 +215,7 @@ CHANGELOG.md           릴리스 노트 (About 대화상자)
 | [README.es.md](README.es.md) | Español |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | 버전 계획 및 v0.0.4 체크리스트 |
 | [CHANGELOG.md](CHANGELOG.md) | 릴리스 기록 |
-| [GitHub Milestones](https://github.com/HFDWKJ/MediaManager/milestones) | 이슈 추적 |
+| [GitHub Milestones](https://github.com/HFDWKJ/APP-media-management/milestones) | 이슈 추적 |
 
 ---
 

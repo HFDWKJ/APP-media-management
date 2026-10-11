@@ -38,7 +38,7 @@ def _show_update_failure(
     parent,
     message: str,
     *,
-    repo: str = "HFDWKJ/MediaManager",
+    repo: str = "HFDWKJ/APP-media-management",
     installer_path: Path | None = None,
 ) -> None:
     box = QMessageBox(parent)
@@ -231,8 +231,8 @@ class UpdateController:
 
     def _repo(self) -> str:
         return str(
-            self._config.get("update", "github_repo", default="HFDWKJ/MediaManager")
-        ).strip() or "HFDWKJ/MediaManager"
+            self._config.get("update", "github_repo", default="HFDWKJ/APP-media-management")
+        ).strip() or "HFDWKJ/APP-media-management"
 
     def _github_token(self) -> str:
         from core.update_checker import resolve_github_token

@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/HFDWKJ/MediaManager/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/MediaManager?label=release&logo=github" alt="Release"/></a>
-  <a href="https://github.com/HFDWKJ/MediaManager"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management/releases"><img src="https://img.shields.io/github/v/release/HFDWKJ/APP-media-management?label=release&logo=github" alt="Release"/></a>
+  <a href="https://github.com/HFDWKJ/APP-media-management"><img src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows" alt="Windows"/></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10+-3776AB?logo=python&logoColor=white" alt="Python"/></a>
   <a href="https://www.riverbankcomputing.com/software/pyqt/"><img src="https://img.shields.io/badge/GUI-PyQt6-41CD52?logo=qt" alt="PyQt6"/></a>
 </p>
@@ -50,14 +50,14 @@
 | **整理重组** | 将解压文件夹扁平化到 `[Collections]`，支持模板、进度条、百分比与 ETA |
 | **Face UID** | 短唯一 ID，附带昵称、地区与备注 |
 | **便携版** | 在 exe 旁使用 `data\` 存放配置、数据库与日志 |
-| **自动更新** | 启动时检查 [GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases) |
+| **自动更新** | 启动时检查 [GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases) |
 | **界面** | DiskGenius 风格暗色主题 + Office 风格 Ribbon |
 
 ---
 
 ## 下载安装
 
-预编译安装包发布于 **[GitHub Releases](https://github.com/HFDWKJ/MediaManager/releases)**：
+预编译安装包发布于 **[GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases)**：
 
 | 版本 | 文件名 |
 |------|--------|
@@ -79,7 +79,7 @@
 ### 安装与运行
 
 ```powershell
-git clone https://github.com/HFDWKJ/MediaManager.git
+git clone https://github.com/HFDWKJ/APP-media-management.git MediaManager
 cd MediaManager
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -222,7 +222,7 @@ CHANGELOG.md           更新日志（About 对话框中显示）
 | [README.es.md](README.es.md) | Español |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | 版本计划与 v0.0.4 任务清单 |
 | [CHANGELOG.md](CHANGELOG.md) | 版本更新记录 |
-| [GitHub Milestones](https://github.com/HFDWKJ/MediaManager/milestones) | Issue 跟踪 |
+| [GitHub Milestones](https://github.com/HFDWKJ/APP-media-management/milestones) | Issue 跟踪 |
 | [media_manager_plan.md](media_manager_plan.md) | 完整 Cursor 开发计划 |
 
 ---
