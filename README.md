@@ -180,7 +180,7 @@ Copy the **entire folder** (including `data\`) to move catalog and settings to a
 
 - **Startup check** (on by default) and **Options → Check for updates…**
 - Disable in **Settings → Updates**
-- Tag releases `v0.0.4`; release notes appear in the update dialog
+- Tag future releases `vX.Y.Z` under [VERSIONING.md](VERSIONING.md); release notes appear in the update dialog. Preserve legacy tags such as `v0.0.4.1`.
 - Private repos: set `update.github_token` in config or `GITHUB_TOKEN` env var
 
 ---
@@ -223,3 +223,9 @@ CHANGELOG.md           Release notes (shown in About dialog)
 ## License
 
 Private / personal project by **Dong, Zhexi**. See repository settings for distribution terms.
+
+## Versioning
+
+Future releases follow [the project SemVer policy](VERSIONING.md).
+
+后续发布遵循[项目 SemVer 规则](VERSIONING.md)。
