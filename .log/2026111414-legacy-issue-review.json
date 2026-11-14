@@ -1,0 +1,533 @@
+{
+  "event": "Review legacy Issue evidence and prepare scoped reconciliation",
+  "recorded_at": "2026-11-14T14:00:53.804928+00:00",
+  "filename_timezone": "UTC",
+  "baseline_commit": "245c34a83b5b01a2318dfd6099e35a3413da50d2",
+  "scope": "Source/evidence and native-task metadata reconciliation; no underlying feature, device, personal-task completion or installed synchronization is implied.",
+  "original_issues": [
+    {
+      "id": 4555031184,
+      "node_id": "I_kwDOSrcNRM8AAAABD4BCkA",
+      "number": 3,
+      "title": "[0.3-03] Library root path relink",
+      "body": "## Goal\nWhen drive letter or NAS UNC changes, let user remap library root and refresh catalog paths.\n\n## Ref\nmedia_manager_plan.md \u2014 device relink; docs/ROADMAP.md \u2014 0.3-03",
+      "state": "open",
+      "state_reason": null,
+      "labels": [
+        {
+          "id": 11096891994,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0iWg",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/P0",
+          "name": "P0",
+          "color": "D93F0B",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        },
+        {
+          "id": 11096892887,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0l1w",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/gui",
+          "name": "gui",
+          "color": "F9D0C4",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        },
+        {
+          "id": 11096893088,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0moA",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/core",
+          "name": "core",
+          "color": "E99695",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        }
+      ],
+      "milestone": {
+        "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1",
+        "html_url": "https://github.com/HFDWKJ/APP-media-management/milestone/1",
+        "labels_url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1/labels",
+        "id": 16148519,
+        "node_id": "MI_kwDOSrcNRM4A9mgn",
+        "number": 1,
+        "title": "v0.0.3",
+        "description": "Stability and core workflow closure: PyQt6 installer, relink, duplicate UI, RAR tracker, catalog UX",
+        "creator": {
+          "login": "HFDWKJ",
+          "id": 12724431,
+          "node_id": "MDQ6VXNlcjEyNzI0NDMx",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12724431?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/HFDWKJ",
+          "html_url": "https://github.com/HFDWKJ",
+          "followers_url": "https://api.github.com/users/HFDWKJ/followers",
+          "following_url": "https://api.github.com/users/HFDWKJ/following{/other_user}",
+          "gists_url": "https://api.github.com/users/HFDWKJ/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/HFDWKJ/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/HFDWKJ/subscriptions",
+          "organizations_url": "https://api.github.com/users/HFDWKJ/orgs",
+          "repos_url": "https://api.github.com/users/HFDWKJ/repos",
+          "events_url": "https://api.github.com/users/HFDWKJ/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/HFDWKJ/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 12,
+        "closed_issues": 2,
+        "state": "open",
+        "created_at": "2026-05-30T16:40:51Z",
+        "updated_at": "2026-11-14T12:05:13Z",
+        "due_on": null,
+        "closed_at": null
+      },
+      "html_url": "https://github.com/HFDWKJ/APP-media-management/issues/3"
+    },
+    {
+      "id": 4555031300,
+      "node_id": "I_kwDOSrcNRM8AAAABD4BDBA",
+      "number": 4,
+      "title": "[0.3-04] Duplicate review UI",
+      "body": "## Goal\nAfter hash verify, show DuplicateGroup list; pick keeper folder; dismiss or mark for cleanup.\n\n## Ref\nDB: DuplicateGroup, DuplicateMember; docs/ROADMAP.md \u2014 0.3-04",
+      "state": "open",
+      "state_reason": null,
+      "labels": [
+        {
+          "id": 11096891994,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0iWg",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/P0",
+          "name": "P0",
+          "color": "D93F0B",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        },
+        {
+          "id": 11096892887,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0l1w",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/gui",
+          "name": "gui",
+          "color": "F9D0C4",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        },
+        {
+          "id": 11096893088,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0moA",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/core",
+          "name": "core",
+          "color": "E99695",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        }
+      ],
+      "milestone": {
+        "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1",
+        "html_url": "https://github.com/HFDWKJ/APP-media-management/milestone/1",
+        "labels_url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1/labels",
+        "id": 16148519,
+        "node_id": "MI_kwDOSrcNRM4A9mgn",
+        "number": 1,
+        "title": "v0.0.3",
+        "description": "Stability and core workflow closure: PyQt6 installer, relink, duplicate UI, RAR tracker, catalog UX",
+        "creator": {
+          "login": "HFDWKJ",
+          "id": 12724431,
+          "node_id": "MDQ6VXNlcjEyNzI0NDMx",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12724431?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/HFDWKJ",
+          "html_url": "https://github.com/HFDWKJ",
+          "followers_url": "https://api.github.com/users/HFDWKJ/followers",
+          "following_url": "https://api.github.com/users/HFDWKJ/following{/other_user}",
+          "gists_url": "https://api.github.com/users/HFDWKJ/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/HFDWKJ/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/HFDWKJ/subscriptions",
+          "organizations_url": "https://api.github.com/users/HFDWKJ/orgs",
+          "repos_url": "https://api.github.com/users/HFDWKJ/repos",
+          "events_url": "https://api.github.com/users/HFDWKJ/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/HFDWKJ/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 12,
+        "closed_issues": 2,
+        "state": "open",
+        "created_at": "2026-05-30T16:40:51Z",
+        "updated_at": "2026-11-14T12:05:13Z",
+        "due_on": null,
+        "closed_at": null
+      },
+      "html_url": "https://github.com/HFDWKJ/APP-media-management/issues/4"
+    },
+    {
+      "id": 4555031421,
+      "node_id": "I_kwDOSrcNRM8AAAABD4BDfQ",
+      "number": 5,
+      "title": "[0.3-05] RAR to extraction linking (archive_tracker)",
+      "body": "## Goal\nLink .rar archive files to [Original Name] extraction folders; suggest New Folder Name from archive filename.\n\n## Ref\nArchive table in database.py; docs/ROADMAP.md \u2014 0.3-05",
+      "state": "open",
+      "state_reason": null,
+      "labels": [
+        {
+          "id": 11096891994,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0iWg",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/P0",
+          "name": "P0",
+          "color": "D93F0B",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        },
+        {
+          "id": 11096893088,
+          "node_id": "LA_kwDOSrcNRM8AAAAClW0moA",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/core",
+          "name": "core",
+          "color": "E99695",
+          "default": false,
+          "description": "",
+          "archived_at": null,
+          "archived_by": null
+        }
+      ],
+      "milestone": {
+        "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1",
+        "html_url": "https://github.com/HFDWKJ/APP-media-management/milestone/1",
+        "labels_url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1/labels",
+        "id": 16148519,
+        "node_id": "MI_kwDOSrcNRM4A9mgn",
+        "number": 1,
+        "title": "v0.0.3",
+        "description": "Stability and core workflow closure: PyQt6 installer, relink, duplicate UI, RAR tracker, catalog UX",
+        "creator": {
+          "login": "HFDWKJ",
+          "id": 12724431,
+          "node_id": "MDQ6VXNlcjEyNzI0NDMx",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12724431?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/HFDWKJ",
+          "html_url": "https://github.com/HFDWKJ",
+          "followers_url": "https://api.github.com/users/HFDWKJ/followers",
+          "following_url": "https://api.github.com/users/HFDWKJ/following{/other_user}",
+          "gists_url": "https://api.github.com/users/HFDWKJ/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/HFDWKJ/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/HFDWKJ/subscriptions",
+          "organizations_url": "https://api.github.com/users/HFDWKJ/orgs",
+          "repos_url": "https://api.github.com/users/HFDWKJ/repos",
+          "events_url": "https://api.github.com/users/HFDWKJ/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/HFDWKJ/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 12,
+        "closed_issues": 2,
+        "state": "open",
+        "created_at": "2026-05-30T16:40:51Z",
+        "updated_at": "2026-11-14T12:05:13Z",
+        "due_on": null,
+        "closed_at": null
+      },
+      "html_url": "https://github.com/HFDWKJ/APP-media-management/issues/5"
+    },
+    {
+      "id": 6389737076,
+      "node_id": "I_kwDOSrcNRM8AAAABfNumdA",
+      "number": 22,
+      "title": "[MEDIA-v0.0.3-acceptance] Complete v0.0.3 release acceptance",
+      "body": "## Outcome and scope\n\n- [ ] All **P0** issues closed ([#1](https://github.com/HFDWKJ/APP-media-management/issues/1)\u2013[#5](https://github.com/HFDWKJ/APP-media-management/issues/5))\n- [ ] `MediaManagerSetup_0.0.3.exe` and `MediaManagerPortal_v0.0.3.zip` built with Nuitka and uploaded to [Release v0.0.3](https://github.com/HFDWKJ/APP-media-management/releases)\n- [ ] Dated `.log/` release record added and `CHANGELOG.md` index updated; About dialog shows 0.0.3 notes\n- [ ] Silent update path tested: 0.0.2 \u2192 0.0.3 (installed + portable)\n- [ ] No open **P0** issues on milestone v0.0.3\n\nThe existing release/tag and closed issues remain historical facts. This issue carries the unchecked release acceptance checklist without claiming that a future release must be republished.\n\n## Completion evidence\n\n- [ ] Confirm the bounded scope and current baseline before execution.\n- [ ] Link the resulting change or decision and its verification evidence.\n- [ ] Record actual acceptance and remaining limits; implementation alone is not runtime acceptance.\n\n## Provenance\n\nMigrated from [the preserved source](https://github.com/HFDWKJ/APP-media-management/blob/5312cb7992f3b532e9f56f4bf8f3a172182f9e45/.rec/Roadmap.md). Source reference: `MEDIA-v0.0.3-acceptance`. Original history and identifiers remain unchanged.\n\nCreating this issue records planned work; it does not execute native operations, enrollments, purchases, deployments, credential changes, or installed synchronization.\n\n<!-- github-native-adoption:20261114:MEDIA-v0.0.3-acceptance -->\n",
+      "state": "open",
+      "state_reason": null,
+      "labels": [
+        {
+          "id": 13078824899,
+          "node_id": "LA_kwDOSrcNRM8AAAADC48Hww",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/migration:github-native",
+          "name": "migration:github-native",
+          "color": "C5DEF5",
+          "default": false,
+          "description": "Imported from a preserved file-based planning source",
+          "archived_at": null,
+          "archived_by": null
+        },
+        {
+          "id": 13078825371,
+          "node_id": "LA_kwDOSrcNRM8AAAADC48Jmw",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/type:verification",
+          "name": "type:verification",
+          "color": "1D76DB",
+          "default": false,
+          "description": "Verification or actual acceptance work",
+          "archived_at": null,
+          "archived_by": null
+        }
+      ],
+      "milestone": {
+        "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1",
+        "html_url": "https://github.com/HFDWKJ/APP-media-management/milestone/1",
+        "labels_url": "https://api.github.com/repos/HFDWKJ/APP-media-management/milestones/1/labels",
+        "id": 16148519,
+        "node_id": "MI_kwDOSrcNRM4A9mgn",
+        "number": 1,
+        "title": "v0.0.3",
+        "description": "Stability and core workflow closure: PyQt6 installer, relink, duplicate UI, RAR tracker, catalog UX",
+        "creator": {
+          "login": "HFDWKJ",
+          "id": 12724431,
+          "node_id": "MDQ6VXNlcjEyNzI0NDMx",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12724431?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/HFDWKJ",
+          "html_url": "https://github.com/HFDWKJ",
+          "followers_url": "https://api.github.com/users/HFDWKJ/followers",
+          "following_url": "https://api.github.com/users/HFDWKJ/following{/other_user}",
+          "gists_url": "https://api.github.com/users/HFDWKJ/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/HFDWKJ/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/HFDWKJ/subscriptions",
+          "organizations_url": "https://api.github.com/users/HFDWKJ/orgs",
+          "repos_url": "https://api.github.com/users/HFDWKJ/repos",
+          "events_url": "https://api.github.com/users/HFDWKJ/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/HFDWKJ/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 12,
+        "closed_issues": 2,
+        "state": "open",
+        "created_at": "2026-05-30T16:40:51Z",
+        "updated_at": "2026-11-14T12:05:13Z",
+        "due_on": null,
+        "closed_at": null
+      },
+      "html_url": "https://github.com/HFDWKJ/APP-media-management/issues/22"
+    },
+    {
+      "id": 6389724496,
+      "node_id": "I_kwDOSrcNRM8AAAABfNt1UA",
+      "number": 14,
+      "title": "[MEDIA-runtime] Verify Windows build, GUI and runtime log location",
+      "body": "## Outcome and scope\n\nVerify the packaged Windows application and GUI on an actual target device. Check that authored operation logs use root .log with UTC YYYYMMDDhh-purpose names and EN-US narrative, and that the configured real log location is documented. Preserve application DownloadHistory/business records separately. Record installed version, build inputs, exercised operations and unverified boundaries. Existing Issue #2 remains closed as recorded; this task verifies actual installed behavior rather than reopening its source/test closure.\n\n## Completion evidence\n\n- [ ] Confirm the bounded scope and current baseline before execution.\n- [ ] Link the resulting change or decision and its verification evidence.\n- [ ] Record actual acceptance and remaining limits; implementation alone is not runtime acceptance.\n\n## Provenance\n\nMigrated from [the preserved source](https://github.com/HFDWKJ/APP-media-management/blob/5312cb7992f3b532e9f56f4bf8f3a172182f9e45/README.md). Source reference: `MEDIA-runtime`. Original history and identifiers remain unchanged.\n\nCreating this issue records planned work; it does not execute native operations, enrollments, purchases, deployments, credential changes, or installed synchronization.\n\n<!-- github-native-adoption:20261114:MEDIA-runtime -->\n",
+      "state": "open",
+      "state_reason": null,
+      "labels": [
+        {
+          "id": 13078824899,
+          "node_id": "LA_kwDOSrcNRM8AAAADC48Hww",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/migration:github-native",
+          "name": "migration:github-native",
+          "color": "C5DEF5",
+          "default": false,
+          "description": "Imported from a preserved file-based planning source",
+          "archived_at": null,
+          "archived_by": null
+        },
+        {
+          "id": 13078825371,
+          "node_id": "LA_kwDOSrcNRM8AAAADC48Jmw",
+          "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/type:verification",
+          "name": "type:verification",
+          "color": "1D76DB",
+          "default": false,
+          "description": "Verification or actual acceptance work",
+          "archived_at": null,
+          "archived_by": null
+        }
+      ],
+      "milestone": null,
+      "html_url": "https://github.com/HFDWKJ/APP-media-management/issues/14"
+    }
+  ],
+  "prepared_issue_changes": [
+    {
+      "number": 3,
+      "title": "[0.3-03] Library root path relink",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 4,
+      "title": "[0.3-04] Duplicate review UI",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 5,
+      "title": "[0.3-05] RAR to extraction linking (archive_tracker)",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 22,
+      "title": "[MEDIA-v0.0.3-acceptance] Historical release checklist superseded; residual work retained",
+      "state": "closed",
+      "state_reason": "not_planned"
+    },
+    {
+      "number": 14,
+      "title": "[MEDIA-runtime] Verify Windows build, GUI and runtime log location",
+      "state": "open",
+      "state_reason": null
+    }
+  ],
+  "prepared_labels": [
+    {
+      "repo": "APP-media-management",
+      "before": {
+        "id": 11096891994,
+        "node_id": "LA_kwDOSrcNRM8AAAAClW0iWg",
+        "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/P0",
+        "name": "P0",
+        "color": "D93F0B",
+        "default": false,
+        "description": "",
+        "archived_at": null,
+        "archived_by": null
+      },
+      "patch": {
+        "new_name": "legacy:v0.0.3-p0",
+        "description": "Historical v0.0.3 release-local P0; current global priority is the Project field."
+      }
+    },
+    {
+      "repo": "APP-media-management",
+      "before": {
+        "id": 11096892327,
+        "node_id": "LA_kwDOSrcNRM8AAAAClW0jpw",
+        "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/P1",
+        "name": "P1",
+        "color": "FBCA04",
+        "default": false,
+        "description": "",
+        "archived_at": null,
+        "archived_by": null
+      },
+      "patch": {
+        "new_name": "legacy:v0.0.3-p1",
+        "description": "Historical v0.0.3 release-local P1; current global priority is the Project field."
+      }
+    },
+    {
+      "repo": "APP-media-management",
+      "before": {
+        "id": 11096892483,
+        "node_id": "LA_kwDOSrcNRM8AAAAClW0kQw",
+        "url": "https://api.github.com/repos/HFDWKJ/APP-media-management/labels/P2",
+        "name": "P2",
+        "color": "C5DEF5",
+        "default": false,
+        "description": "",
+        "archived_at": null,
+        "archived_by": null
+      },
+      "patch": {
+        "new_name": "legacy:v0.0.3-p2",
+        "description": "Historical v0.0.3 release-local P2; current global priority is the Project field."
+      }
+    }
+  ],
+  "prepared_milestones": [
+    {
+      "repo": "APP-media-management",
+      "number": 1,
+      "patch": {
+        "title": "Legacy v0.0.3 scope (unscheduled)",
+        "description": "Historical v0.0.3 planning scope. The v0.0.3 and v0.0.4 releases already exist; remaining open Issues are residual work, not a request to republish those versions. Legacy rank labels retain their original identities; use the Project Priority field for current global ordering. No delivery date is assigned."
+      }
+    }
+  ],
+  "native_write_status": "Prepared; final applied API readback is recorded by the MyProtocol aggregate.",
+  "release_evidence": [
+    {
+      "tag": "v0.0.4",
+      "url": "https://github.com/HFDWKJ/APP-media-management/releases/tag/v0.0.4",
+      "published_at": "2026-06-01T05:23:23Z",
+      "prerelease": false,
+      "assets": [
+        {
+          "id": 434965135,
+          "name": "MediaManagerPortal_v0.0.4.zip",
+          "size": 31608638
+        },
+        {
+          "id": 435080390,
+          "name": "MediaManagerSetup_0.0.4.exe",
+          "size": 24012288
+        }
+      ]
+    },
+    {
+      "tag": "v0.0.4.1",
+      "url": "https://github.com/HFDWKJ/APP-media-management/releases/tag/v0.0.4.1",
+      "published_at": "2026-06-01T07:32:42Z",
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 435046709,
+          "name": "MediaManagerPortal_v0.0.4.1.zip",
+          "size": 31617123
+        },
+        {
+          "id": 435046708,
+          "name": "MediaManagerSetup_0.0.4.1.zip",
+          "size": 40429980
+        }
+      ]
+    },
+    {
+      "tag": "v0.0.3",
+      "url": "https://github.com/HFDWKJ/APP-media-management/releases/tag/v0.0.3",
+      "published_at": "2026-06-01T03:36:39Z",
+      "prerelease": false,
+      "assets": [
+        {
+          "id": 434952320,
+          "name": "MediaManagerPortal_v0.0.3.zip",
+          "size": 31608383
+        },
+        {
+          "id": 434952321,
+          "name": "MediaManagerSetup_0.0.3.exe",
+          "size": 24004096
+        }
+      ]
+    },
+    {
+      "tag": "v0.0.2",
+      "url": "https://github.com/HFDWKJ/APP-media-management/releases/tag/v0.0.2",
+      "published_at": "2026-05-30T15:52:19Z",
+      "prerelease": false,
+      "assets": [
+        {
+          "id": 433870266,
+          "name": "MediaManagerPortal_v0.0.2.zip",
+          "size": 31530849
+        },
+        {
+          "id": 433885192,
+          "name": "MediaManagerSetup_0.0.2.exe",
+          "size": 23929344
+        }
+      ]
+    }
+  ],
+  "source_findings": {
+    "3": "Root add/remove/configuration exists; accepted identity-preserving remap not established.",
+    "4": "Hash verification and DuplicateGroup storage exist; post-hash keeper/cleanup acceptance not established.",
+    "5": "Archive schema and RAR detection exist; persistent extraction linking/naming acceptance not established.",
+    "22": "Tag version, release history and published artifact metadata verified. No Windows binary/update path executed."
+  }
+}
