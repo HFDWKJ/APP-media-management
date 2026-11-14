@@ -49,7 +49,7 @@
 | **Duplicate detection** | Tier 1: fast `[Original Name]` fuzzy match · Tier 2: SHA-256 when you choose **Verify with Hash** |
 | **Reorganize** | Flatten extraction folders into `[Collections]` with templates, progress bar, percentage, and ETA |
 | **Face UID** | Short unique IDs with nicknames, region, and comments |
-| **Portable edition** | `data\` beside the exe for config, database, and logs |
+| **Portable edition** | `data\` beside the exe for config and database; `.log\` for logs |
 | **Auto-update** | Checks [GitHub Releases](https://github.com/HFDWKJ/APP-media-management/releases) on startup |
 | **UI** | DiskGenius-inspired dark theme and Office-style ribbon |
 
@@ -162,7 +162,7 @@ Silent flags for in-app updates: `/VERYSILENT`, `/SUPPRESSMSGBOXES`, `/NORESTART
 |------|------|
 | Config | `%APPDATA%\MediaManager\config.json` |
 | Database | `%APPDATA%\MediaManager\catalog.db` |
-| Logs | `%APPDATA%\MediaManager\logs\` |
+| Logs | `%APPDATA%\MediaManager\.log\` |
 
 **Portable edition** — `portable.marker` beside `MediaManager.exe`, or use the portal build:
 
@@ -170,7 +170,7 @@ Silent flags for in-app updates: `/VERYSILENT`, `/SUPPRESSMSGBOXES`, `/NORESTART
 |------|------|
 | Config | `data\config.json` |
 | Database | `data\catalog.db` |
-| Logs | `data\logs\` |
+| Logs | `.log\` |
 
 Copy the **entire folder** (including `data\`) to move catalog and settings to another PC.
 
