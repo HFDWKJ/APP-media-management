@@ -114,7 +114,7 @@ This project is a **real-world test of AI-assisted development** with [Cursor](h
 
 **Typical loop:** Prompt → Agent edits → run `MediaManager.exe` → screenshot / error feedback → ship release.
 
-> Historical Chinese translation: [Cursor development section](README.zh-CN.md#使用-cursor-与-vibe-coding-开发).
+> Historical Chinese translation: [Cursor development section](https://github.com/HFDWKJ/APP-media-management/blob/f04c9f41a4c1c9b08ea72a0c91bfe910f608669b/README.zh-CN.md#使用-cursor-与-vibe-coding-开发).
 
 ### Practical notes
 
