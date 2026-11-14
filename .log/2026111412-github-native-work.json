@@ -1,0 +1,178 @@
+{
+  "event": "Adopt GitHub-native work tracking from maintained repository files",
+  "recorded_at": "2026-11-14T12:19:01.406530+00:00",
+  "filename_timezone": "UTC",
+  "repository": "HFDWKJ/APP-media-management",
+  "baseline_commit": "5312cb7992f3b532e9f56f4bf8f3a172182f9e45",
+  "authorization": "Owner requested creating the advised Issues and migrating file-based functions that GitHub natively supports. Scope is reviewed active repository work; preserved private/domain/consumer data stays in its established Home.",
+  "native_issues": [
+    {
+      "key": "MEDIA-runtime",
+      "repo": "APP-media-management",
+      "number": 14,
+      "id": 6389724496,
+      "node_id": "I_kwDOSrcNRM8AAAABfNt1UA",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/14",
+      "created_at": "2026-11-14T12:04:04Z",
+      "body_sha256": "df55235dcd277f30117a9fb96e7176eace4c43d1f30b8bd2ddb38dede15e62ef",
+      "source_file": "README.md",
+      "source_repo": "APP-media-management",
+      "milestone": null,
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.1.0-1",
+      "repo": "APP-media-management",
+      "number": 15,
+      "id": 6389731122,
+      "node_id": "I_kwDOSrcNRM8AAAABfNuPMg",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/15",
+      "created_at": "2026-11-14T12:04:42Z",
+      "body_sha256": "d9642589eaf98ca61e016f471112e8c24e6af8d2f14572e447bf3bdae828c0da",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.1.0",
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.1.0-2",
+      "repo": "APP-media-management",
+      "number": 16,
+      "id": 6389731781,
+      "node_id": "I_kwDOSrcNRM8AAAABfNuRxQ",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/16",
+      "created_at": "2026-11-14T12:04:46Z",
+      "body_sha256": "b2d4977a145dfbda1bad6c861c0cd2a1ccc9713fbed1dfe7b397eb7b33817b2f",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.1.0",
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.1.0-3",
+      "repo": "APP-media-management",
+      "number": 17,
+      "id": 6389732980,
+      "node_id": "I_kwDOSrcNRM8AAAABfNuWdA",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/17",
+      "created_at": "2026-11-14T12:04:51Z",
+      "body_sha256": "3e925138ad61471a9b817c4c2f8e48284d9d481f6623a0565b85081ecfe44bac",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.1.0",
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.1.0-4",
+      "repo": "APP-media-management",
+      "number": 18,
+      "id": 6389733765,
+      "node_id": "I_kwDOSrcNRM8AAAABfNuZhQ",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/18",
+      "created_at": "2026-11-14T12:04:55Z",
+      "body_sha256": "c31263da2bb77b29660bfb777434f5fc01c59f5c52cd971b19a8f15132596362",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.1.0",
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.2.0-1",
+      "repo": "APP-media-management",
+      "number": 19,
+      "id": 6389734612,
+      "node_id": "I_kwDOSrcNRM8AAAABfNuc1A",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/19",
+      "created_at": "2026-11-14T12:05:00Z",
+      "body_sha256": "5b98581b1adec0b392eb9b6844a2db7223fc824c8ce68dd196c248faa3e1bdc4",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.2.0",
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.2.0-2",
+      "repo": "APP-media-management",
+      "number": 20,
+      "id": 6389735559,
+      "node_id": "I_kwDOSrcNRM8AAAABfNughw",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/20",
+      "created_at": "2026-11-14T12:05:05Z",
+      "body_sha256": "4c8856aed0191b369e3e7dc982ad3a4b3b86d274e376595a109ce2ca78618209",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.2.0",
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.2.0-3",
+      "repo": "APP-media-management",
+      "number": 21,
+      "id": 6389736171,
+      "node_id": "I_kwDOSrcNRM8AAAABfNui6w",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/21",
+      "created_at": "2026-11-14T12:05:08Z",
+      "body_sha256": "8591a1b65cae292b85797570a9f8300d32f6571fc20494c125028a8baff7953a",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.2.0",
+      "readback_verified": true
+    },
+    {
+      "key": "MEDIA-v0.0.3-acceptance",
+      "repo": "APP-media-management",
+      "number": 22,
+      "id": 6389737076,
+      "node_id": "I_kwDOSrcNRM8AAAABfNumdA",
+      "url": "https://github.com/HFDWKJ/APP-media-management/issues/22",
+      "created_at": "2026-11-14T12:05:13Z",
+      "body_sha256": "5f8fe1d621acb26908cf33d5f6969e0bb010848ae7a1e981adc59acd58bbf094",
+      "source_file": ".rec/Roadmap.md",
+      "source_repo": "APP-media-management",
+      "milestone": "v0.0.3",
+      "readback_verified": true
+    }
+  ],
+  "exact_source_snapshots": [
+    {
+      "repo": "APP-media-management",
+      "old_path": ".rec/Roadmap.md",
+      "archive_path": ".arc/Native-Tracking-2026-11-14/.rec/Roadmap.md",
+      "source_commit": "5312cb7992f3b532e9f56f4bf8f3a172182f9e45",
+      "sha256": "477951dde53f4b5dd51148222caf84a7c9bc5cecfed200db2e0adc110e9fcfdd"
+    }
+  ],
+  "file_dispositions": [
+    {
+      "repository": "APP-media-management",
+      "path": ".doc/Development-Plan.md",
+      "disposition": "retained",
+      "reason": "Maintained specification, procedure, template, domain evidence or native navigation; not an independently editable live task queue."
+    },
+    {
+      "repository": "APP-media-management",
+      "path": ".rec/Roadmap.md",
+      "disposition": "native_issues_and_milestones",
+      "reason": "Reuse existing Issues; import unchecked/future work once; native milestones replace handwritten delivery tables; exact original archived."
+    },
+    {
+      "repository": "APP-media-management",
+      "path": "CHANGELOG.md",
+      "disposition": "retained",
+      "reason": "Existing file is a navigation index to preserved release evidence; GitHub Releases already carries published releases where present. Do not invent releases from plans or rewrite immutable logs."
+    }
+  ],
+  "preservation": "Existing issue identities and closure state, pre-existing .arc files, dated .log payloads, runtime code/configuration, identifiers, and private native bodies remain unchanged. No historical task was reopened from a title-only index.",
+  "scope_limits": "Repository work tracking and source-reference adoption only; no installed synchronization, actual device execution, external data migration, enrollment, purchase, deployment or credential operation.",
+  "source_publication": "The commit containing this receipt publishes reviewed source changes; final cross-repository readback is recorded by MyProtocol.",
+  "local_validation": {
+    "local_links_checked": 22,
+    "new_missing_targets": [],
+    "inherited_missing_targets": [],
+    "issue_forms_validated": [
+      ".github/ISSUE_TEMPLATE/work-item.yml"
+    ],
+    "frozen_baseline_files_unchanged": 0,
+    "prior_log_files_unchanged": 3
+  }
+}

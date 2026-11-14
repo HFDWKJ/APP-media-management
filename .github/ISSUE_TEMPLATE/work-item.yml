@@ -1,0 +1,34 @@
+name: Work item
+description: A scoped task, improvement, decision, or verification with explicit acceptance.
+title: ""
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome and scope
+      description: State the result, why it is needed, and what is outside scope. Keep secrets and private source bodies out of Issues.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and existing work
+      description: Link the relevant requirement, source commit, existing Issue, and preserved legacy ID when applicable.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Distinguish policy, implementation, and actual environment acceptance where relevant.
+      value: "- [ ] Define a concrete verification result and its evidence."
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and execution boundary
+      description: Link native blockers; identify required environment and any separate authorization before execution.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Result and evidence
+      description: Link PRs, commits, logs, and actual verification; leave unknown results unclaimed.

@@ -250,3 +250,7 @@ Apply the [canonical auxiliary-directory catalog](https://github.com/HFDWKJ/MyPr
 | `test_data/` | Project dataset, preserved source input, or consumer-bound fixture; identifiers, raw payloads and established readers retained. |
 
 Root README/AGENTS, licenses, version authorities, manifests and launch/configuration interfaces retain their supported locations. Versioning guidance is maintained in [.doc/Versioning.md](.doc/Versioning.md). Private local data and existing runtime settings are not relocated or uploaded by this classification. Old paths and original hashes are recoverable from the dated migration receipt and its pinned source commit. This source/layout update does not establish deployment, device acceptance or automatic synchronization.
+
+## Work tracking
+
+Use [Issues](https://github.com/HFDWKJ/APP-media-management/issues) for tasks and acceptance, and [milestones](https://github.com/HFDWKJ/APP-media-management/milestones) for delivery groups. The owner’s private Project provides the cross-repository view. Current task status is read from GitHub; repository files retain specifications, domain data, source/identity mappings and dated evidence. Creating a task does not execute it or establish runtime acceptance.

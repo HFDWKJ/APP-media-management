@@ -1,5 +1,7 @@
 # Cursor Technical Development Plan: Media Management App
 
+> Technical design reference. Implementation prompts below describe the blueprint, not a live task-state register. Use [Issues](https://github.com/HFDWKJ/APP-media-management/issues) and [milestones](https://github.com/HFDWKJ/APP-media-management/milestones) for selected work, order and acceptance. Preserve explicit runtime validation limits.
+
 This document is designed to be fed directly into Cursor or another AI coding assistant to guide the step-by-step development of the Media Management Desktop Application.
 
 ## 1. Project Context & Constraints

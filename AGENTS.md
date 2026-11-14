@@ -9,3 +9,7 @@ Follow [MyProtocol logging policy](https://github.com/HFDWKJ/MyProtocol/blob/mai
 ## Auxiliary content classification
 
 Apply the [MyProtocol auxiliary-directory catalog](https://github.com/HFDWKJ/MyProtocol/blob/8722d0d2279337d2e414bac90bf00663afc3d7d0/System-Conventions/Repository-Auxiliary-Directories.md). Use registered dot-plus-three-letter support categories only as needed, keep one authoritative body, and classify primary content and tool-required paths explicitly. The repository README records current roles and compatibility exceptions. Preserve original logs, imported source packages, identifiers and private runtime values. This instruction supersedes older generic support-folder guidance; source publication is not installed-device or deployment acceptance.
+
+## Native work tracking
+
+Follow [GitHub-native work tracking](https://github.com/HFDWKJ/MyProtocol/blob/main/Software-Applications/GitHub/Work-Tracking.md). Reuse Issues in the owning repository, native sub-issues/dependencies, milestones and the existing private Project. Do not maintain parallel Markdown/JSON task status, priority or assignment tables. Preserve domain/consumer data, stable IDs, private source boundaries and frozen evidence. Read the selected Issue before work and link actual verification before closing it; source changes do not establish device acceptance. Native mutations still require the actual task authorization.
