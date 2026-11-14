@@ -107,10 +107,10 @@ This project is a **real-world test of AI-assisted development** with [Cursor](h
 
 | Stage | How |
 |-------|-----|
-| **Planning** | [`media_manager_plan.md`](media_manager_plan.md) — phased prompts for each milestone |
+| **Planning** | [`.doc/Development-Plan.md`](.doc/Development-Plan.md) — phased prompts for each milestone |
 | **Implementation** | Agent built `core/`, `gui/`, packaging scripts, and release flow step by step |
 | **UI iteration** | Screenshot-driven feedback (ribbon, progress bar, filters) |
-| **Release tracking** | [`docs/ROADMAP.md`](docs/ROADMAP.md) + GitHub Issues / Milestones |
+| **Release tracking** | [`.rec/Roadmap.md`](.rec/Roadmap.md) + GitHub Issues / Milestones |
 
 **Typical loop:** Prompt → Agent edits → run `MediaManager.exe` → screenshot / error feedback → ship release.
 
@@ -118,7 +118,7 @@ This project is a **real-world test of AI-assisted development** with [Cursor](h
 
 ### Practical notes
 
-- Keep a living plan (`media_manager_plan.md`) for stable Agent context across sessions.
+- Keep a living plan (`.doc/Development-Plan.md`) for stable Agent context across sessions.
 - Test **packaged** Nuitka builds early — runtime detection differs from `python src\main.py`.
 - Packaging rule: **Nuitka only**, no Inno Setup (enforced via Cursor user rules).
 - Public GitHub Releases simplify auto-update (no token required).
@@ -180,7 +180,7 @@ Copy the **entire folder** (including `data\`) to move catalog and settings to a
 
 - **Startup check** (on by default) and **Options → Check for updates…**
 - Disable in **Settings → Updates**
-- Tag future releases `vX.Y.Z` under [VERSIONING.md](VERSIONING.md); release notes appear in the update dialog. Preserve legacy tags such as `v0.0.4.1`.
+- Tag future releases `vX.Y.Z` under [.doc/Versioning.md](.doc/Versioning.md); release notes appear in the update dialog. Preserve legacy tags such as `v0.0.4.1`.
 - Private repos: set `update.github_token` in config or `GITHUB_TOKEN` env var
 
 ---
@@ -196,8 +196,8 @@ src/
   utils/               Config, logging, paths
 assets/                App icon
 scripts/               Build & helper scripts
-docs/ROADMAP.md        Milestone checklist
-media_manager_plan.md  Cursor phased development plan
+.rec/Roadmap.md        Milestone checklist
+.doc/Development-Plan.md  Cursor phased development plan
 CHANGELOG.md           Release notes (shown in About dialog)
 ```
 
@@ -213,10 +213,10 @@ CHANGELOG.md           Release notes (shown in About dialog)
 | [README.de.md](README.de.md) | Deutsch |
 | [README.ko.md](README.ko.md) | 한국어 |
 | [README.es.md](README.es.md) | Español |
-| [docs/ROADMAP.md](docs/ROADMAP.md) | Version plans and v0.0.4 checklist |
+| [.rec/Roadmap.md](.rec/Roadmap.md) | Version plans and v0.0.4 checklist |
 | [CHANGELOG.md](CHANGELOG.md) | Release history |
 | [GitHub Milestones](https://github.com/HFDWKJ/APP-media-management/milestones) | Issue tracking |
-| [media_manager_plan.md](media_manager_plan.md) | Full Cursor development plan |
+| [.doc/Development-Plan.md](.doc/Development-Plan.md) | Full Cursor development plan |
 
 ---
 
@@ -226,9 +226,27 @@ Private / personal project by **Dong, Zhexi**. See repository settings for distr
 
 ## Versioning
 
-Future releases follow [the project SemVer policy](VERSIONING.md).
+Future releases follow [the project SemVer policy](.doc/Versioning.md).
 
 
 ## Log storage
 
 Source and portable runs write UTC runtime logs and reorganization CSV receipts under root `.log/`. Installed builds use writable `%APPDATA%/MediaManager/.log/` with the same UTC filename format. Receipt filenames distinguish source folders and same-hour runs without overwriting prior evidence. Existing markers and catalog data keep their established locations; legacy CSV reports remain readable. `CHANGELOG.md` is a navigation index to dated `.log/` release records, which the About dialog and packaging scripts include. Windows packaging and installed-path behavior still require device acceptance.
+
+## Repository layout and content roles
+
+Apply the [canonical auxiliary-directory catalog](https://github.com/HFDWKJ/MyProtocol/blob/8722d0d2279337d2e414bac90bf00663afc3d7d0/System-Conventions/Repository-Auxiliary-Directories.md). Custom support categories use a dot plus three lowercase letters and are created only when needed. The following classification preserves primary project content and required consumer interfaces.
+
+| Path | Role and boundary |
+| --- | --- |
+| `.doc/` | Maintained project support documentation and versioning guidance. |
+| `.log/` | Dated execution evidence; existing receipt bodies are preserved. |
+| `.rec/` | Current support status or publication-scope register. |
+| `assets/` | Existing browser, package or published-site resource paths retained; no deployment layout change. |
+| `data/` | Project dataset, preserved source input, or consumer-bound fixture; identifiers, raw payloads and established readers retained. |
+| `installers/` | Installer source consumed by the current packaging workflow; not a generated installer output. |
+| `scripts/` | Existing source/import/command or test-harness layout; current consumers retain their supported paths. |
+| `src/` | Existing source/import/command or test-harness layout; current consumers retain their supported paths. |
+| `test_data/` | Project dataset, preserved source input, or consumer-bound fixture; identifiers, raw payloads and established readers retained. |
+
+Root README/AGENTS, licenses, version authorities, manifests and launch/configuration interfaces retain their supported locations. Versioning guidance is maintained in [.doc/Versioning.md](.doc/Versioning.md). Private local data and existing runtime settings are not relocated or uploaded by this classification. Old paths and original hashes are recoverable from the dated migration receipt and its pinned source commit. This source/layout update does not establish deployment, device acceptance or automatic synchronization.

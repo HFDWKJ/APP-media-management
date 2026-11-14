@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-14T10:51:36.127217+00:00",
+  "purpose": "Classify repository material and adopt needed three-letter auxiliary directories",
+  "repository": "HFDWKJ/APP-media-management",
+  "source_commit": "42da0919bf8c48efb016d6972b01c88846341713",
+  "policy": "https://github.com/HFDWKJ/MyProtocol/blob/8722d0d2279337d2e414bac90bf00663afc3d7d0/System-Conventions/Repository-Auxiliary-Directories.md",
+  "moves": [
+    {
+      "old_path": "VERSIONING.md",
+      "new_path": ".doc/Versioning.md",
+      "sha256_before": "b6687196473fc1244007c6c3e152a766447e460b505997d683863f183d33682a",
+      "sha256_after": "b6687196473fc1244007c6c3e152a766447e460b505997d683863f183d33682a",
+      "byte_identical": true,
+      "change_reason": null,
+      "git_blob_before": "166f61e71ca31a3e7323bba5d0c4c8dc81885ced",
+      "git_blob_after": "166f61e71ca31a3e7323bba5d0c4c8dc81885ced"
+    },
+    {
+      "old_path": "docs/ROADMAP.md",
+      "new_path": ".rec/Roadmap.md",
+      "sha256_before": "477951dde53f4b5dd51148222caf84a7c9bc5cecfed200db2e0adc110e9fcfdd",
+      "sha256_after": "477951dde53f4b5dd51148222caf84a7c9bc5cecfed200db2e0adc110e9fcfdd",
+      "byte_identical": true,
+      "change_reason": null,
+      "git_blob_before": "db7d5eab12cb487d4a9cd830a012169d7a1029d0",
+      "git_blob_after": "db7d5eab12cb487d4a9cd830a012169d7a1029d0"
+    },
+    {
+      "old_path": "media_manager_plan.md",
+      "new_path": ".doc/Development-Plan.md",
+      "sha256_before": "29ab09ed934f5dddf0263573f6eb9d84077dea047e2ae6b6a3e937755c8e5eed",
+      "sha256_after": "71b0f8eb788a90f686803708fa7381190fc9fe5c1ce7611c0dc9f754c3d0459b",
+      "byte_identical": false,
+      "change_reason": "Maintained relative links and current path references adjusted for the new location.",
+      "git_blob_before": "3d6bcc3c46603c1ae0907691716eda4f12086266",
+      "git_blob_after": "ac2760c757bbb6d5c86052bfb2ecf4117b6e4a57"
+    }
+  ],
+  "root_classification": [
+    {
+      "path": ".doc/",
+      "role": ".doc",
+      "reason": "Maintained project support documentation and versioning guidance."
+    },
+    {
+      "path": ".log/",
+      "role": ".log",
+      "reason": "Dated execution evidence; existing receipt bodies are preserved."
+    },
+    {
+      "path": ".rec/",
+      "role": ".rec",
+      "reason": "Current support status or publication-scope register."
+    },
+    {
+      "path": "assets/",
+      "role": "runtime-resource-interface",
+      "reason": "Existing browser, package or published-site resource paths retained; no deployment layout change."
+    },
+    {
+      "path": "data/",
+      "role": "primary-data-or-fixture",
+      "reason": "Project dataset, preserved source input, or consumer-bound fixture; identifiers, raw payloads and established readers retained."
+    },
+    {
+      "path": "installers/",
+      "role": "source-interface",
+      "reason": "Installer source consumed by the current packaging workflow; not a generated installer output."
+    },
+    {
+      "path": "scripts/",
+      "role": "source-interface",
+      "reason": "Existing source/import/command or test-harness layout; current consumers retain their supported paths."
+    },
+    {
+      "path": "src/",
+      "role": "source-interface",
+      "reason": "Existing source/import/command or test-harness layout; current consumers retain their supported paths."
+    },
+    {
+      "path": "test_data/",
+      "role": "primary-data-or-fixture",
+      "reason": "Project dataset, preserved source input, or consumer-bound fixture; identifiers, raw payloads and established readers retained."
+    }
+  ],
+  "preserved_frozen_and_log_count": 2,
+  "preservation_method": "Existing protected paths are excluded from mutations; changed-path audit and baseline Git blobs verify preservation.",
+  "root_entry_files": "README/AGENTS, license, version authority, package/configuration and launch interfaces retained; support versioning prose moved to .doc when present.",
+  "readme_language": "New/maintained root README prose is EN-US; original history and unchanged learning/source bodies retain their original language.",
+  "validation": {
+    "local_link_targets_checked": 21,
+    "new_broken_links": [],
+    "inherited_unresolved_links": [],
+    "status": "passed",
+    "scope": "Changed documentation links, source path consumer where affected, staged Git blobs and preserved tracked content",
+    "staged_mapped_files_verified": 3,
+    "protected_git_blobs_verified": 2
+  },
+  "limits": [
+    "No deployment, hosted-site publication workflow execution, service/database/native data writes or installed-device acceptance.",
+    "Existing consumer-bound source, resource and primary data paths are documented exceptions; raw/private runtime bodies were not scanned or uploaded.",
+    "Historical .log bodies are preserved; this is not a replay of completed log normalization."
+  ],
+  "compatibility": "Historical Git commits retain original paths; maintained in-repository readers point to canonical destinations. Root manifests/entrypoints and actual package/runtime interfaces are preserved.",
+  "other_changed_files": [
+    ".gitignore",
+    "AGENTS.md",
+    "README.md"
+  ],
+  "root_file_classification": [
+    {
+      "path": ".gitignore",
+      "role": "package-tool-or-release-interface"
+    },
+    {
+      "path": "AGENTS.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "README.de.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "README.es.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "README.fr.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "README.ja.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "README.ko.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "README.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "role": "root-documentation-interface"
+    },
+    {
+      "path": "media_manager.spec",
+      "role": "package-tool-or-release-interface"
+    },
+    {
+      "path": "requirements.txt",
+      "role": "package-tool-or-release-interface"
+    }
+  ],
+  "classification_coverage": "Every tracked root file and top-level directory classified; internal source/subject package structure retained under its declared parent role.",
+  "root_readme_source": {
+    "path": "README.md",
+    "commit": "42da0919bf8c48efb016d6972b01c88846341713",
+    "note": "Original pre-edit prose remains recoverable at this Git commit; translations and current layout prose do not rewrite prior history."
+  }
+}

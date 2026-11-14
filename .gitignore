@@ -36,3 +36,8 @@ test_install_out*/
 # Local runtime logs and reorganization receipts; release/history records remain tracked.
 .log/*-media-manager-runtime.log
 .log/*-reorganize-*.csv
+
+# Local auxiliary state, disposable work and generated staging
+/.run/
+/.tmp/
+/.out/

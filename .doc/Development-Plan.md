@@ -444,7 +444,7 @@ Example result: `VIDEO_Cool_Video_2024_0003_a3f8b2c1.mp4`
 > **Prompt for Cursor:**
 > "Create `src/core/database.py` and `src/utils/config.py`. Use `sqlite3` with WAL mode for a catalog database at a configurable local path (default `%APPDATA%/MediaManager/catalog.db`).
 >
-> 1. Implement tables: `StorageDevice`, `LibraryRoot`, `Media`, `Metadata`, `DownloadHistory`, `ExtractionFolder`, `Archive`, `NameMatchGroup`, `NameMatchMember`, `DuplicateGroup`, `DuplicateMember` — use the schema defined in `media_manager_plan.md` section 3.
+> 1. Implement tables: `StorageDevice`, `LibraryRoot`, `Media`, `Metadata`, `DownloadHistory`, `ExtractionFolder`, `Archive`, `NameMatchGroup`, `NameMatchMember`, `DuplicateGroup`, `DuplicateMember` — use the schema defined in `.doc/Development-Plan.md` section 3.
 > 2. Add indexes on `Media.file_hash`, `Media.file_size`, `Media.root_id`, `Media.availability`, and UNIQUE `(root_id, relative_path)`.
 > 3. Implement CRUD methods:
 >    - Devices: `insert_device`, `get_devices`, `update_device_online_status`
