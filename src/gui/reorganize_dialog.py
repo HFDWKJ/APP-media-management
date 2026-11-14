@@ -13,6 +13,7 @@ from core.database import Database, FOLDER_TYPE_COLLECTION
 from core.name_matcher import suggest_new_folder_name
 from core.reorganize import build_reorganize_plan
 from gui.workers import ReorganizeWorker
+from utils.paths import log_dir
 
 
 class ReorganizeDialog(QDialog):
@@ -138,8 +139,9 @@ class ReorganizeDialog(QDialog):
                 self,
                 "Done",
                 "Reorganize completed.\n\n"
-                "A timestamped CSV report was written in the folder\n"
-                "(reorganize_YYYYMMDD_HHMMSS.csv).",
+                + (f"CSV report saved in:\n{log_dir()}"
+                   if self.config.get("reorganize", {}).get("write_csv", True)
+                   else "CSV reporting is disabled."),
             )
             parent = self.parent()
             if parent is not None:

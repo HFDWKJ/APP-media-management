@@ -48,6 +48,13 @@ $nuitkaArgs = @(
   "--remove-output"
 )
 
+# Include only release records explicitly referenced by the compatibility index.
+$releaseRecords = @([regex]::Matches((Get-Content "CHANGELOG.md" -Raw), '\]\((\.log/[0-9]{10}-[a-z0-9-]+\.md)\)') | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
+foreach ($record in $releaseRecords) {
+  if (-not (Test-Path -LiteralPath $record -PathType Leaf)) { throw "Missing indexed release record: $record" }
+  $nuitkaArgs += "--include-data-files=${record}=${record}"
+}
+
 if ($Mode -eq "onefile") {
   $nuitkaArgs = @("--onefile") + $nuitkaArgs
 } else {

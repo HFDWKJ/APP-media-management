@@ -5,7 +5,7 @@
 <h1 align="center">Media Manager</h1>
 
 <p align="center">
-  <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.fr.md">Français</a> · <a href="README.de.md">Deutsch</a> · <a href="README.ko.md">한국어</a> · <a href="README.es.md">Español</a>
+  <strong>English</strong> · <a href="README.zh-CN.md">Simplified Chinese</a> · <a href="README.ja.md">Japanese</a> · <a href="README.fr.md">Français</a> · <a href="README.de.md">Deutsch</a> · <a href="README.ko.md">한국어</a> · <a href="README.es.md">Español</a>
 </p>
 
 <p align="center">
@@ -114,7 +114,7 @@ This project is a **real-world test of AI-assisted development** with [Cursor](h
 
 **Typical loop:** Prompt → Agent edits → run `MediaManager.exe` → screenshot / error feedback → ship release.
 
-> Chinese documentation for this section: **[README.zh-CN.md § Cursor 开发](README.zh-CN.md#使用-cursor-与-vibe-coding-开发)**
+> Historical Chinese translation: [Cursor development section](README.zh-CN.md#使用-cursor-与-vibe-coding-开发).
 
 ### Practical notes
 
@@ -207,8 +207,8 @@ CHANGELOG.md           Release notes (shown in About dialog)
 
 | Document | Description |
 |----------|-------------|
-| [README.zh-CN.md](README.zh-CN.md) | 简体中文 |
-| [README.ja.md](README.ja.md) | 日本語 |
+| [README.zh-CN.md](README.zh-CN.md) | Simplified Chinese |
+| [README.ja.md](README.ja.md) | Japanese |
 | [README.fr.md](README.fr.md) | Français |
 | [README.de.md](README.de.md) | Deutsch |
 | [README.ko.md](README.ko.md) | 한국어 |
@@ -228,4 +228,7 @@ Private / personal project by **Dong, Zhexi**. See repository settings for distr
 
 Future releases follow [the project SemVer policy](VERSIONING.md).
 
-后续发布遵循[项目 SemVer 规则](VERSIONING.md)。
+
+## Log storage
+
+Source and portable runs write UTC runtime logs and reorganization CSV receipts under root `.log/`. Installed builds use writable `%APPDATA%/MediaManager/.log/` with the same UTC filename format. Receipt filenames distinguish source folders and same-hour runs without overwriting prior evidence. Existing markers and catalog data keep their established locations; legacy CSV reports remain readable. `CHANGELOG.md` is a navigation index to dated `.log/` release records, which the About dialog and packaging scripts include. Windows packaging and installed-path behavior still require device acceptance.

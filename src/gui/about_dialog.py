@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sys
+import re
 from pathlib import Path
 
 from PyQt6.QtCore import Qt
@@ -40,7 +41,12 @@ def _load_changelog_text() -> str:
             "Add `CHANGELOG.md` at the project root to show release notes here."
         )
     try:
-        return path.read_text(encoding="utf-8")
+        index = path.read_text(encoding="utf-8")
+        # Resolve the local navigation index while retaining old packaged CHANGELOG support.
+        logs = re.findall(r"\]\((\.log/[0-9]{10}-[a-z0-9-]+\.md)\)", index)
+        if logs:
+            return "\n\n".join((path.parent / relative).read_text(encoding="utf-8") for relative in logs)
+        return index
     except OSError as e:
         return f"# Changelog\n\nCould not read changelog:\n\n{e}"
 

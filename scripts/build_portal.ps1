@@ -38,7 +38,7 @@ Media Manager — portable data folder
 On first run the app creates:
   config.json   — settings and library root paths
   catalog.db    — catalog database
-  logs\         — application log
+  Runtime logs live in .log\ beside the portable executable.
 
 To move to another PC: copy the entire MediaManager folder (including this data\ folder).
 Use Tools → Export database for backups; Import database to restore.
@@ -49,6 +49,12 @@ re-add or edit library roots after moving if drive letters differ.
 
 if (Test-Path "CHANGELOG.md") {
   Copy-Item "CHANGELOG.md" $portalRoot -Force
+  $releaseRecords = @([regex]::Matches((Get-Content "CHANGELOG.md" -Raw), '\]\((\.log/[0-9]{10}-[a-z0-9-]+\.md)\)') | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
+  New-Item -ItemType Directory -Force (Join-Path $portalRoot ".log") | Out-Null
+  foreach ($record in $releaseRecords) {
+    if (-not (Test-Path -LiteralPath $record -PathType Leaf)) { throw "Missing indexed release record: $record" }
+    Copy-Item -LiteralPath $record -Destination (Join-Path $portalRoot ".log") -Force
+  }
 }
 
 $zipPath = Join-Path (Get-Location) "dist_portal\MediaManagerPortal_v$appVersion.zip"

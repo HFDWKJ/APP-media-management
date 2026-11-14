@@ -47,7 +47,7 @@ Developer: **Dong, Zhexi**
 
 - [ ] All **P0** issues closed ([#1](https://github.com/HFDWKJ/APP-media-management/issues/1)–[#5](https://github.com/HFDWKJ/APP-media-management/issues/5))
 - [ ] `MediaManagerSetup_0.0.3.exe` and `MediaManagerPortal_v0.0.3.zip` built with Nuitka and uploaded to [Release v0.0.3](https://github.com/HFDWKJ/APP-media-management/releases)
-- [ ] `CHANGELOG.md` updated; About dialog shows 0.0.3 notes
+- [ ] Dated `.log/` release record added and `CHANGELOG.md` index updated; About dialog shows 0.0.3 notes
 - [ ] Silent update path tested: 0.0.2 → 0.0.3 (installed + portable)
 - [ ] No open **P0** issues on milestone v0.0.3
 
@@ -91,4 +91,4 @@ Release   Tag v0.0.3, publish installers on GitHub Releases
 2. Branch: `feature/0.3-xx-short-name` (example: `feature/0.3-01-installer-wizard`).
 3. Commit message: `feat(installer): PyQt6 wizard (#1)`.
 4. Open a PR referencing the issue; close via `Closes #1` in the PR body.
-5. When cutting the release, check off **Definition of done** above and update `CHANGELOG.md`.
+5. When cutting the release, check off **Definition of done** above and add a UTC `.log/YYYYMMDDhh-release-concise-purpose.md` record and update the `CHANGELOG.md` navigation index.

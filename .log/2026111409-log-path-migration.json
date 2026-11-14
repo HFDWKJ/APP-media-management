@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "repository": "HFDWKJ/APP-media-management",
+  "recorded_at": "2026-11-14T09:13:51.356672+00:00",
+  "policy": "https://github.com/HFDWKJ/MyProtocol/blob/main/System-Conventions/Development/Logging.md",
+  "source_head": "f04c9f41a4c1c9b08ea72a0c91bfe910f608669b",
+  "moves": [
+    {
+      "source": "CHANGELOG.md",
+      "target": ".log/2026052914-release-history.md",
+      "source_sha256": "465e7edc0ebccaf7eadbe220164ebb4be3ea7753d722cc4c2794a508fce4b537",
+      "target_sha256": "465e7edc0ebccaf7eadbe220164ebb4be3ea7753d722cc4c2794a508fce4b537",
+      "timestamp_utc": "2026-05-29T14:46:52+00:00",
+      "timestamp_basis": "earliest Git add commit committer timestamp, converted as a whole to UTC; source has date-only or aggregate events with no reliable unique hour",
+      "source_commit": "f04c9f41a4c1c9b08ea72a0c91bfe910f608669b",
+      "byte_identical": true
+    }
+  ],
+  "exceptions": [
+    {
+      "path": "CHANGELOG.md",
+      "classification": "navigation-only compatibility index; chronological body moved to .log"
+    }
+  ],
+  "status": {
+    "policy": "adopted",
+    "repository_migration": "implemented; source/target hashes and local checks verified",
+    "runtime_acceptance": "not claimed"
+  },
+  "validation": [
+    "Complete tracked Git tree metadata inventory",
+    "Pre-migration clean worktree and baseline GitHub head matched",
+    "Moved source SHA-256 verified against original commit; target SHA-256 verified",
+    "git diff --check",
+    "5 synthetic Python tests passed: UTC routing, hour rollover, same-hour receipt collision preservation, legacy report/marker compatibility, About index loading",
+    "Changed Python modules compile successfully"
+  ],
+  "limitations": [
+    "Windows GUI/installed behavior, PowerShell/Nuitka packaging and device runtime acceptance not executed; source changes remain unreleased"
+  ]
+}

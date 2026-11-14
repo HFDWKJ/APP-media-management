@@ -26,7 +26,7 @@ def is_portable_mode() -> bool:
 
 
 def data_dir() -> Path:
-    """Directory for config, database, and logs."""
+    """Directory for config and database."""
     if is_portable_mode():
         path = application_root() / DATA_DIR_NAME
         path.mkdir(parents=True, exist_ok=True)
@@ -49,6 +49,8 @@ def catalog_db_path() -> Path:
 
 
 def log_dir() -> Path:
-    logs = data_dir() / "logs"
+    # Installed binaries use writable application state; source/portable runs use their root.
+    base = _installed_config_dir() if is_compiled() and not is_portable_mode() else application_root()
+    logs = base / ".log"
     logs.mkdir(parents=True, exist_ok=True)
     return logs

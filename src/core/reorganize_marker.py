@@ -18,9 +18,9 @@ def has_reorganize_marker(folder: Path) -> bool:
     folder = folder.resolve()
     if marker_file_path(folder).is_file():
         return True
-    from core.reorganize_report import CSV_PREFIX
+    from core.reorganize_report import find_latest_reorganize_csv
 
-    return any(folder.glob(f"{CSV_PREFIX}*.csv"))
+    return find_latest_reorganize_csv(folder) is not None
 
 
 def read_reorganize_marker(folder: Path) -> dict[str, Any] | None:
